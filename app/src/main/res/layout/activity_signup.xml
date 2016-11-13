@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mercacortex.decknetvisuals.activities.SignupActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/decknet_logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imvLogo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tilMarginTop"
+        android:layout_below="@id/imvLogo"
+        android:id="@+id/tilUsername">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintUsr"
+            android:id="@+id/edtUsername" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilUserPassword"
+        android:layout_marginTop="@dimen/tilMarginTop"
+        android:layout_below="@id/tilUsername">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPwd"
+            android:id="@+id/edtUserPassword"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilEmail"
+        android:layout_below="@id/tilUserPassword"
+        android:layout_marginTop="@dimen/tilMarginTop">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress"
+            android:id="@+id/edtEmail" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:text="@string/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilEmail"
+        android:layout_marginTop="@dimen/lloMarginTop"
+        android:id="@+id/lloSpinner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txvCountry"
+            android:text="@string/country"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnCountry"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgpGender"
+        android:layout_below="@id/lloSpinner"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/rgpMarginTop">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:text="@string/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtMale"/>
+
+        <RadioButton
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtFemale"/>
+    </RadioGroup>
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbEmailUpdates"
+        android:text="@string/emailUpdates"
+        android:layout_below="@id/rgpGender"
+        android:layout_marginTop="@dimen/chbMarginTop"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbTaC"
+        android:text="@string/chbTaC"
+        android:layout_below="@id/chbEmailUpdates"
+        android:layout_marginTop="@dimen/chbMarginTop"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnMarginTop"
+        android:id="@+id/btnSignupOk"
+        android:text="@string/signUpOk"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chbTaC"
+        android:onClick="signup"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="appName">DeckNetVisuals</string>
+    <string name="hintUsr">Input Username</string>
+    <string name="hintPwd">Input Password</string>
+    <string name="chbRemember">Remember me</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="hintEmail">Input Email</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="country">Country</string>
+    <string name="emailUpdates">I wish to receive email updates!</string>
+    <string name="chbTaC">I accept the Terms and Conditions</string>
+    <string name="signUpOk">Sign me up!</string>
+</resources>
