@@ -4,8 +4,12 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="edtMarginTop">16dp</dimen>
     <dimen name="tilMarginTop">4dp</dimen>
-    <dimen name="chbMarginTop">16dp</dimen>
-    <dimen name="btnMarginTop">16dp</dimen>
+    <dimen name="chbMarginTop">14dp</dimen>
+    <dimen name="btnMarginTop">14dp</dimen>
     <dimen name="rgpMarginTop">16dp</dimen>
     <dimen name="lloMarginTop">16dp</dimen>
+    <dimen name="btnWidth">100dp</dimen>
+    <dimen name="btnHeight">80dp</dimen>
+    <dimen name="txvMarginTop">16dp</dimen>
+    <dimen name="txvMarginBottom">16dp</dimen>
 </resources>

@@ -1,31 +1,30 @@
 package com.mercacortex.decknetvisuals.model;
 
 /**
- * Holds information for game cards
+ * Holds information for game cards. Information is readonly.
  */
 
 public class GameCard {
-    private String name, text;
-    private int qtty;
+    private final int cardId;
+    private final String cardName, cardText;
+    private final int cardQuantity;
 
-    public GameCard(String name, String text, int qtty) {
-        this.name = name;
-        this.text = text;
-        this.qtty = qtty;
+    public GameCard(int cardId, String name, String text, int quantity) {
+        this.cardId = cardId;
+        this.cardName = name;
+        this.cardText = text;
+        this.cardQuantity = quantity;
     }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public String getText() { return text; }
-    public void setText(String text) { this.text = text; }
-    public int getQtty() { return qtty; }
-    public void setQtty(int qtty) { this.qtty = qtty; }
+    public int getCardId() { return cardId; }
+    public String getCardName() { return cardName; }
+    public String getCardText() { return cardText; }
+    public int getCardQuantity() { return cardQuantity; }
+
     @Override
     public String toString() {
-        return "GameCard{" +
-                "name='" + name + '\'' +
-                ", text='" + text + '\'' +
-                ", qtty=" + qtty +
-                '}';
+        return  "cardName='" + cardName + '\'' +
+                ", cardText='" + cardText + '\'' +
+                ", cardQuantity=" + cardQuantity;
     }
 }

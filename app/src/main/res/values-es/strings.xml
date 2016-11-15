@@ -1,0 +1,23 @@
+<resources>
+    <string name="appName" translatable="false">DeckNetVisuals</string>
+    <string name="hintUsr">Introduce tu nombre de usuario</string>
+    <string name="hintPassword">Introduce tu contraseña</string>
+    <string name="chbRemember">Recordarme</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="signUp">Registrarse</string>
+    <string name="hintEmail">Introduce tu email</string>
+    <string name="gender">Género</string>
+    <string name="male">Masculino</string>
+    <string name="female">Femenino</string>
+    <string name="country">País</string>
+    <string name="emailUpdates">¡Deseo recibir actualizaciones de correo!</string>
+    <string name="chbTaC">Acepto los términos y condiciones</string>
+    <string name="signUpOk">¡Quiero registrarme!</string>
+    <string name="about">Sobre esta aplicación</string>
+    <string name="settingsAccount">Configuración de cuenta</string>
+    <string name="settingsRememberAccount">Recordar cuenta de usuario</string>
+    <string name="settingsRememberAccountTitle">Usuario</string>
+    <string name="settingsRememberAccountTitleSummary">Usuario actual</string>
+    <string name="settingsRememberAccountPassword">Contraseña</string>
+    <string name="settingsRememberAccountPasswordTitle">Contraseña actual</string>
+</resources>

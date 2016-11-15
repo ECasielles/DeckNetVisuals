@@ -42,7 +42,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hintPwd"
+            android:hint="@string/hintPassword"
             android:id="@+id/edtUserPassword"
             android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
@@ -109,7 +109,6 @@
             android:id="@+id/rbtFemale"/>
     </RadioGroup>
 
-
     <android.support.v7.widget.AppCompatCheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,7 +133,6 @@
         android:text="@string/signUpOk"
         android:backgroundTint="@color/colorPrimary"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/chbTaC"
-        android:onClick="signup"/>
+        android:layout_below="@id/chbTaC" />
 
 </RelativeLayout>

@@ -21,7 +21,7 @@
     <android.support.design.widget.TextInputLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_below="@+id/imvLogo"
+        android:layout_below="@id/imvLogo"
         android:id="@+id/tilUsername"
         android:layout_marginTop="@dimen/tilMarginTop"
         app:errorEnabled="true"
@@ -39,7 +39,7 @@
     <android.support.design.widget.TextInputLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/tilPwd"
+        android:id="@+id/tilPassword"
         android:layout_below="@id/tilUsername"
         android:layout_marginTop="@dimen/tilMarginTop"
         app:counterEnabled="true"
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/edtPwd"
-            android:hint="@string/hintPwd"
+            android:hint="@string/hintPassword"
             android:inputType="textPassword"
             style="@style/Widget.AppCompat.EditText"/>
     </android.support.design.widget.TextInputLayout>
@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chbRemember"
-        android:layout_below="@+id/tilPwd"
+        android:layout_below="@id/tilPassword"
         android:layout_marginTop="@dimen/chbMarginTop"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
@@ -80,16 +80,27 @@
         <Button
             android:id="@+id/btnLogin"
             android:text="@string/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:background="@drawable/vector_hexagon"
+            android:backgroundTint="@color/btnBgColor"
             style="@style/Widget.AppCompat.Button"/>
         <Button
             android:id="@+id/btnSignUp"
             android:text="@string/signUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:background="@drawable/vector_hexagon"
+            android:backgroundTint="@color/btnBgColor"
             style="@style/Widget.AppCompat.Button"/>
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txvAbout"
+        android:text="@string/about"/>
 </RelativeLayout>

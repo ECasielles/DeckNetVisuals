@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".activities.SignupActivity" />
         <activity android:name=".activities.MainScreenActivity" />
-        <activity android:name=".activities.DeckManagerActivity"></activity>
+        <activity android:name=".activities.DeckManagerActivity" />
+        <activity android:name=".activities.AboutActivity"></activity>
     </application>
 
 </manifest>
